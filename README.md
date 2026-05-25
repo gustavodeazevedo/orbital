@@ -1,24 +1,29 @@
-# Orbital - Technical Overview
+# Orbital - Visão Técnica
 
 ## Stack
+
 - Frontend: React + Vite + TypeScript (PWA)
 - Backend: Java 17 + Spring Boot + Gradle
-- Database: PostgreSQL (Neon)
+- Banco de Dados: PostgreSQL (Neon)
 
-## Key Features
-- Auth with JWT + refresh tokens
-- Multi-tenant data (operators, clients, services, appointments)
-- Dashboard insights and scheduling flows
+## Principais Funcionalidades
+
+- Autenticação com JWT + refresh tokens
+- Dados multi-tenant (operadores, clientes, serviços e agendamentos)
+- Insights de dashboard e fluxos de agendamento
 
 ## API
-- Base URL: /auth, /operators, /clients, /services, /appointments
-- Standard response: { success, data, error }
+
+- URL base: /auth, /operators, /clients, /services, /appointments
+- Resposta padrão: { success, data, error }
 
 ## Build
+
 - Frontend: npm install && npm run build
 - Backend: ./gradlew build -x test
 
-## Env (backend)
+## Variáveis de Ambiente (backend)
+
 - DB_URL, DB_USER, DB_PASSWORD
 - JWT_SECRET, JWT_EXPIRATION_MINUTES, REFRESH_TOKEN_EXPIRATION_DAYS
 - CORS_ALLOWED_ORIGINS
