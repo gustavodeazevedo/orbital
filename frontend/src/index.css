@@ -1,0 +1,272 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f5f6f7;
+  --color-background-secondary: #eceeef;
+  --color-surface: #ffffff;
+  --color-border: #e6e6e6;
+  --color-divider: #efefef;
+
+  --color-primary: #b7f34c;
+  --color-primary-hover: #a8e73f;
+  --color-primary-active: #8edc2f;
+  --color-primary-light: #d9f8a4;
+
+  --color-text: #1c1c1c;
+  --color-text-secondary: #6b6b6b;
+  --color-text-muted: #9a9a9a;
+
+  --color-ghost: #f4f4f4;
+  --color-ghost-hover: #ededed;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --radius-card: 20px;
+  --radius-button: 999px;
+  --radius-input: 14px;
+  --radius-sm: 12px;
+
+  --shadow-card: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-float: 0px 6px 16px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0px 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes blob-drift-a {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(40px, -30px) scale(1.05);
+  }
+  66% {
+    transform: translate(-25px, 20px) scale(0.97);
+  }
+}
+
+@keyframes blob-drift-b {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-35px, 25px) scale(0.96);
+  }
+  66% {
+    transform: translate(30px, -20px) scale(1.04);
+  }
+}
+
+.animate-blob-a {
+  animation: blob-drift-a 18s ease-in-out infinite;
+}
+
+.animate-blob-b {
+  animation: blob-drift-b 14s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 30s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* no custom cursor styles — default browser cursors apply */
+}
+
+.liquid-sidebar {
+  position: relative;
+  justify-content: flex-start;
+  background: linear-gradient(180deg, #eceeef 0%, #e7eaed 100%);
+  border-right: 1px solid rgba(214, 218, 222, 0.9);
+  overflow: hidden;
+}
+
+.liquid-glass-card {
+  position: relative;
+  width: 74px;
+  min-height: calc(100% - 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 6px;
+  border-radius: 28px;
+  transition: opacity 0.26s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.18);
+  filter: drop-shadow(-8px -10px 46px #0000005f);
+  backdrop-filter: brightness(1.1) blur(2px) url(#liquidDisplacementFilter);
+  -webkit-backdrop-filter: brightness(1.1) blur(2px);
+}
+
+.liquid-glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow:
+    inset 6px 6px 0 -6px rgba(255, 255, 255, 0.7),
+    inset 0 0 8px 1px rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.liquid-sidebar-brand {
+  position: relative;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #20242b, #101113);
+  box-shadow:
+    0 10px 18px rgba(15, 17, 19, 0.28),
+    inset 1px 1px 1px rgba(255, 255, 255, 0.18);
+}
+
+.liquid-sidebar-dock {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.liquid-dock-slot {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.liquid-dock-button {
+  position: relative;
+  isolation: isolate;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  transform-origin: center center;
+  color: var(--color-text-secondary);
+  background: rgba(255, 255, 255, 0.36);
+  backdrop-filter: brightness(1.08) blur(2px) url(#liquidDisplacementFilter);
+  -webkit-backdrop-filter: brightness(1.08) blur(2px);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.8),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.45),
+    0 7px 14px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 180ms ease,
+    box-shadow 220ms ease,
+    background 220ms ease;
+  will-change: transform;
+}
+
+.liquid-dock-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset 3px 3px 0 -3px rgba(255, 255, 255, 0.76),
+    inset 0 0 6px 1px rgba(255, 255, 255, 0.56);
+  pointer-events: none;
+}
+
+.liquid-dock-button:hover {
+  color: var(--color-text);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.88),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.6),
+    0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.liquid-dock-button.is-active {
+  color: var(--color-text);
+  background: rgba(205, 247, 112, 0.55);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.72),
+    0 12px 24px rgba(142, 220, 47, 0.33);
+}
+
+.liquid-main-shell {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.82),
+    rgba(247, 249, 250, 0.72)
+  );
+}
+
+.liquid-main-shell::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+}
+
+.liquid-glass-chip,
+.liquid-glass-chip-primary {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.36);
+  backdrop-filter: brightness(1.08) blur(2px) url(#liquidDisplacementFilter);
+  -webkit-backdrop-filter: brightness(1.08) blur(2px);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.82),
+    0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.liquid-glass-chip::before,
+.liquid-glass-chip-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset 3px 3px 0 -3px rgba(255, 255, 255, 0.75),
+    inset 0 0 7px 1px rgba(255, 255, 255, 0.56);
+  pointer-events: none;
+}
+
+.liquid-glass-chip-primary {
+  background: rgba(205, 247, 112, 0.6);
+  border-color: rgba(220, 255, 160, 0.8);
+}
+
+.liquid-filter-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}

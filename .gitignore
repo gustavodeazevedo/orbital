@@ -1,0 +1,14 @@
+# Ignorar arquivos de configuração sensíveis
+**/.env
+
+# Backend build/cache
+backend/build/
+backend/.gradle/
+
+# Frontend build/cache
+frontend/dist/
+frontend/node_modules/
+frontend/.vite/
+
+# Engenharia de contexto
+context/
