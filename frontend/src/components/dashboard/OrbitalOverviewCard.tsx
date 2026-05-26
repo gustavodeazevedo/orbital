@@ -1,3 +1,9 @@
+// Card com resumo e dicas do dashboard.
+// Usado no DashboardHome.
+/*
+ * Traz um resumo geral e sugestoes simples.
+ * Serve como visao rapida do negocio.
+ */
 import { Bot, Clock3, Lightbulb, Sparkles, TrendingUp } from "lucide-react";
 
 export type AIInsightImpact = "alto" | "medio" | "baixo";

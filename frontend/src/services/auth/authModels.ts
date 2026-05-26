@@ -1,3 +1,9 @@
+// Tipos usados no login e cadastro.
+// Usados pelo authService e telas de acesso.
+/*
+ * Define o formato dos dados que entram e saem no login.
+ * Evita campos diferentes entre telas.
+ */
 export interface RegisterPayload {
   nome: string;
   email: string;

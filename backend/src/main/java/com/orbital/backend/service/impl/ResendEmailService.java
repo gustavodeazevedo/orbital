@@ -1,3 +1,11 @@
+/*
+ * Envia email de recuperacao de senha pelo Resend.
+ * Usado no AuthServiceImpl.
+ */
+/*
+ * Faz a chamada real ao provedor de email.
+ * Se trocar o provedor, o resto do sistema nao muda.
+ */
 package com.orbital.backend.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;

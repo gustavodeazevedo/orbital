@@ -1,3 +1,11 @@
+/*
+ * Rotas de clientes (/clients).
+ * Usa servicos de leitura e escrita do dashboard.
+ */
+/*
+ * Recebe as acoes da tela de clientes.
+ * Busca listas, cria e atualiza clientes no banco.
+ */
 package com.orbital.backend.controller;
 
 import com.orbital.backend.dto.common.ApiResponse;

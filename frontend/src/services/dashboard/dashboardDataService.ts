@@ -1,3 +1,9 @@
+// Busca e envia dados do dashboard no backend.
+// Usa apiClient e authService para enviar a sessao.
+/*
+ * Concentra as chamadas de clientes, servicos e agendamentos.
+ * Assim cada pagina usa a mesma forma de buscar dados.
+ */
 import { apiClient } from "../api/apiClient";
 import { authService } from "../auth/authService";
 import {

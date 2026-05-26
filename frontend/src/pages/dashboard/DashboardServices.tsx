@@ -1,3 +1,9 @@
+// Tela de servicos com lista, busca e formulario.
+// Usa dados do dashboard.
+/*
+ * Mostra os servicos cadastrados e permite alterar.
+ * Reaproveita modais e componentes do dashboard.
+ */
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   BadgeDollarSign,

@@ -1,3 +1,11 @@
+/*
+ * Define como criar, editar e excluir dados do dashboard.
+ * Usado nos controllers e feito por DashboardCommandServiceImpl.
+ */
+/*
+ * Aqui ficam as acoes que mudam dados.
+ * Centraliza o que grava no banco.
+ */
 package com.orbital.backend.service;
 
 import com.orbital.backend.dto.dashboard.AppointmentListResponse;

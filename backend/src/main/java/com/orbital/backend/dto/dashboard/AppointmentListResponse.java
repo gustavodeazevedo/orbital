@@ -1,3 +1,11 @@
+/*
+ * Lista de agendamentos do dashboard.
+ * Sai da rota /appointments.
+ */
+/*
+ * Formato usado na tabela de agendamentos.
+ * Mantem campos padronizados para a tela.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import java.math.BigDecimal;

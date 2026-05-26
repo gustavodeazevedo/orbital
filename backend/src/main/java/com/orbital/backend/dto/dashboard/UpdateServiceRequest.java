@@ -1,3 +1,11 @@
+/*
+ * Dados para atualizar um servico.
+ * Usado no ServiceCatalogController e no DashboardCommandServiceImpl.
+ */
+/*
+ * Define o que pode mudar em um servico.
+ * Usado quando a tela salva edicoes.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import jakarta.validation.constraints.DecimalMin;

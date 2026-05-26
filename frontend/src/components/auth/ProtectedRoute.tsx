@@ -1,3 +1,9 @@
+// Bloqueia paginas sem login.
+// Verifica a sessao antes de mostrar o dashboard.
+/*
+ * Se nao houver sessao valida, envia para o login.
+ * Se estiver ok, libera o conteudo protegido.
+ */
 import { useEffect, useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { authService } from "../../services/auth/authService";

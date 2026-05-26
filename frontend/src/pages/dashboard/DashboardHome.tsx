@@ -1,3 +1,9 @@
+// Resumo do dashboard com indicadores.
+// Busca dados e mostra os cards.
+/*
+ * Tela principal do dashboard, com os numeros gerais.
+ * Faz o carregamento inicial das informacoes.
+ */
 import { useEffect, useMemo, useState } from "react";
 import OrbitalOverviewCard from "../../components/dashboard/OrbitalOverviewCard";
 import ActivityInsightsCard from "../../components/dashboard/ActivityInsightsCard";

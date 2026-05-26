@@ -1,3 +1,9 @@
+// Modal simples para mostrar detalhes.
+// Usado nas telas do dashboard.
+/*
+ * Exibe informacoes extras sem sair da tela.
+ * Mantem a experiencia mais leve.
+ */
 import { useEffect } from "react";
 import type { ReactNode } from "react";
 import { X } from "lucide-react";

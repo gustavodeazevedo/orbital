@@ -1,3 +1,11 @@
+/*
+ * Tratamento geral de erros da API.
+ * Devolve respostas padronizadas para o frontend.
+ */
+/*
+ * Evita respostas diferentes para cada erro.
+ * Deixa as mensagens mais claras na tela.
+ */
 package com.orbital.backend.exception;
 
 import com.orbital.backend.dto.common.ApiResponse;

@@ -1,3 +1,9 @@
+// Tela de agendamentos com lista e edicao.
+// Usa dados do dashboard.
+/*
+ * Mostra agendamentos do dia e permite ajustes.
+ * Ajuda a manter a agenda organizada.
+ */
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import type { FormEvent } from "react";

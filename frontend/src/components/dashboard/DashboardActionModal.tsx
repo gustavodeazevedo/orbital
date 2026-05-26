@@ -1,3 +1,9 @@
+// Modal de formulario para criar ou editar.
+// Usado nas telas de clientes, servicos e agendamentos.
+/*
+ * Reaproveitado para varios cadastros.
+ * Evita criar um modal novo para cada tela.
+ */
 import { useEffect } from "react";
 import type { FormEvent, ReactNode } from "react";
 import { X } from "lucide-react";

@@ -1,3 +1,11 @@
+/*
+ * Entidade do operador (empresa/conta).
+ * Usada no login e no dashboard.
+ */
+/*
+ * Representa a conta no banco.
+ * Guarda dados basicos usados em varias telas.
+ */
 package com.orbital.backend.model;
 
 import jakarta.persistence.Column;

@@ -1,3 +1,9 @@
+// Cards animados em pilha.
+// Usado na secao Features.
+/*
+ * Ajuda a mostrar varias informacoes em pouco espaco.
+ * Cria um efeito visual para destacar as features.
+ */
 import React, {
   Children,
   cloneElement,

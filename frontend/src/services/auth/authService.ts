@@ -1,3 +1,9 @@
+// Cuida do login, cadastro e senha.
+// Usado pelas telas de acesso e pela protecao de rotas.
+/*
+ * Guarda funcoes de entrada e saida do sistema.
+ * Facilita reutilizar essas acoes em varias telas.
+ */
 import { ApiClientError, apiClient } from "../api/apiClient";
 import { LoginResult, OperatorModel } from "./authModels";
 import type {

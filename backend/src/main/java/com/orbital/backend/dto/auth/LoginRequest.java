@@ -1,3 +1,11 @@
+/*
+ * Dados de login.
+ * Usado no AuthController e no AuthServiceImpl.
+ */
+/*
+ * Email e senha informados na tela de acesso.
+ * Mantem o formato do pedido padronizado.
+ */
 package com.orbital.backend.dto.auth;
 
 import jakarta.validation.constraints.Email;

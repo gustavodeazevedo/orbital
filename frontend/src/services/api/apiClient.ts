@@ -1,3 +1,9 @@
+// Faz pedidos para o backend e trata erros.
+// Usado pelos servicos de login e dashboard.
+/*
+ * Centraliza as chamadas para nao repetir codigo em cada tela.
+ * Se a forma de falar com o backend mudar, ajusta aqui.
+ */
 export interface ApiErrorPayload {
   code: string;
   message: string;

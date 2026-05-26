@@ -1,3 +1,11 @@
+/*
+ * Detalhes de erro da API.
+ * Usado no ApiResponse e no GlobalExceptionHandler.
+ */
+/*
+ * Guarda uma mensagem simples e um codigo de erro.
+ * Ajuda a interface a explicar o problema.
+ */
 package com.orbital.backend.dto.common;
 
 import java.time.LocalDateTime;

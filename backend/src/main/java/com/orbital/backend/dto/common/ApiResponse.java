@@ -1,3 +1,11 @@
+/*
+ * Resposta padrao da API (sucesso, dados, erro).
+ * Usada pelo frontend.
+ */
+/*
+ * Todas as rotas seguem este formato.
+ * Isso facilita mostrar dados e erros na tela.
+ */
 package com.orbital.backend.dto.common;
 
 public class ApiResponse<T> {

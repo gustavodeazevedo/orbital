@@ -1,3 +1,11 @@
+/*
+ * Dados de cadastro do operador.
+ * Usado no AuthController.
+ */
+/*
+ * Campos basicos para criar a conta.
+ * Mantem os dados organizados no cadastro.
+ */
 package com.orbital.backend.dto.auth;
 
 import jakarta.validation.constraints.Email;

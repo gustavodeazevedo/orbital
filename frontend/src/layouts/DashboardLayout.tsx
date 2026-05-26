@@ -1,3 +1,9 @@
+// Estrutura do dashboard com menu, topo e conteudo.
+// Mostra as telas protegidas.
+/*
+ * Reune elementos fixos do dashboard, como menu e header.
+ * Evita repetir layout em cada pagina interna.
+ */
 import { useEffect, useMemo, useState } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { authService } from "../services/auth/authService";

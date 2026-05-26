@@ -1,3 +1,11 @@
+/*
+ * Cria, edita e exclui clientes, servicos e agendamentos no banco.
+ * Usado pelos controllers.
+ */
+/*
+ * Centraliza as alteracoes do dashboard.
+ * Evita repeticao de SQL em varios lugares.
+ */
 package com.orbital.backend.service.impl;
 
 import com.orbital.backend.dto.dashboard.AppointmentListResponse;

@@ -1,3 +1,9 @@
+// Notificacoes rapidas para toda a interface.
+// Usado no main.tsx.
+/*
+ * Centraliza o uso de toasts para qualquer tela.
+ * Evita criar logica de aviso em cada pagina.
+ */
 import {
   createContext,
   useCallback,

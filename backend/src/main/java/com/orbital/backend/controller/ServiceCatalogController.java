@@ -1,3 +1,11 @@
+/*
+ * Rotas de servicos (/services).
+ * Usa servicos de leitura e escrita do dashboard.
+ */
+/*
+ * Recebe as acoes da tela de servicos.
+ * Lista, cria e atualiza servicos no banco.
+ */
 package com.orbital.backend.controller;
 
 import com.orbital.backend.dto.common.ApiResponse;

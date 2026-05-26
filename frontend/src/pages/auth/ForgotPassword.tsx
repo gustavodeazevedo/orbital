@@ -1,3 +1,9 @@
+// Tela para pedir nova senha por email.
+// Envia o pedido pelo authService.
+/*
+ * Pede o email para iniciar a recuperacao.
+ * A tela mostra o retorno da solicitacao.
+ */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

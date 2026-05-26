@@ -1,3 +1,9 @@
+// Perguntas frequentes.
+// Usada no Home.
+/*
+ * Responde duvidas comuns sem precisar contato.
+ * Ajuda a reduzir barreiras de entrada.
+ */
 import { useState } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { ChevronDown } from "lucide-react";

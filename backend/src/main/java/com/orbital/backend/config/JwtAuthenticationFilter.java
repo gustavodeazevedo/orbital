@@ -1,3 +1,11 @@
+/*
+ * Le o codigo de acesso do cabecalho e libera o usuario.
+ * Registrado no SecurityConfig para proteger as rotas.
+ */
+/*
+ * Roda antes das rotas protegidas.
+ * Se o codigo for valido, libera o acesso.
+ */
 package com.orbital.backend.config;
 
 import jakarta.servlet.FilterChain;

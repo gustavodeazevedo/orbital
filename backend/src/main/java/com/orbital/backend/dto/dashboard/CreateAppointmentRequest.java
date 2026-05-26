@@ -1,3 +1,11 @@
+/*
+ * Dados para criar um agendamento.
+ * Usado no AppointmentController e no DashboardCommandServiceImpl.
+ */
+/*
+ * Define os campos que a tela precisa enviar ao criar um horario.
+ * Ajuda a validar o que chega do frontend.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import jakarta.validation.constraints.Future;

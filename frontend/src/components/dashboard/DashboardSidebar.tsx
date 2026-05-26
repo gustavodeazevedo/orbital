@@ -1,3 +1,9 @@
+// Menu lateral do dashboard.
+// Usado no DashboardLayout.
+/*
+ * Mostra links das secoes do dashboard.
+ * Ajuda o usuario a navegar rapidamente.
+ */
 import { CalendarDays, LayoutGrid, Settings, Users } from "lucide-react";
 import { useEffect, useMemo, useRef } from "react";
 

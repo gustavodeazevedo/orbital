@@ -1,3 +1,9 @@
+// Card com atividade da semana.
+// Usado no DashboardHome.
+/*
+ * Resume dados semanais de forma visual.
+ * Ajuda a entender o ritmo do negocio.
+ */
 import { ArrowUpRight } from "lucide-react";
 import {
   Bar,

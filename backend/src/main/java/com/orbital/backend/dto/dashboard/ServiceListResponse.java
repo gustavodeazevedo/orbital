@@ -1,3 +1,11 @@
+/*
+ * Lista de servicos do dashboard.
+ * Sai da rota /services.
+ */
+/*
+ * Formato usado na lista de servicos.
+ * Mantem nome e valor padronizados.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import java.math.BigDecimal;

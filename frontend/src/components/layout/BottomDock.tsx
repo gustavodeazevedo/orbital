@@ -1,3 +1,9 @@
+// Barra inferior para celular.
+// Pode ser usada no dashboard.
+/*
+ * Facilita a navegacao em telas pequenas.
+ * Mostra atalhos rapidos para secoes.
+ */
 import type { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 

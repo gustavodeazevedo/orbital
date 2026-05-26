@@ -1,3 +1,9 @@
+// Tela para entrar no sistema.
+// Chama o authService e abre o dashboard.
+/*
+ * Contem o formulario de login e validacoes basicas.
+ * Se der certo, leva o usuario para o dashboard.
+ */
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";

@@ -1,3 +1,11 @@
+/*
+ * Pedido de recuperacao de senha.
+ * Usado no AuthController e no AuthServiceImpl.
+ */
+/*
+ * Envia o email que vai receber o link ou codigo.
+ * Serve para iniciar o processo de troca.
+ */
 package com.orbital.backend.dto.auth;
 
 import jakarta.validation.constraints.Email;

@@ -1,3 +1,9 @@
+// Cabecalho da landing com menu e botoes.
+// Usado no LandingLayout.
+/*
+ * Mostra links principais e chamada para acao.
+ * Fica fixo no topo das paginas publicas.
+ */
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

@@ -1,3 +1,11 @@
+/*
+ * Dados para atualizar um agendamento.
+ * Usado no AppointmentController e no DashboardCommandServiceImpl.
+ */
+/*
+ * Define o que pode mudar no agendamento.
+ * Usado quando a tela atualiza dados.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import jakarta.validation.constraints.NotBlank;

@@ -1,3 +1,11 @@
+/*
+ * Acesso aos dados do operador no banco.
+ * Usado por AuthServiceImpl, OperatorServiceImpl e servicos do dashboard.
+ */
+/*
+ * Reune consultas da tabela de operadores.
+ * Facilita buscar por id ou email.
+ */
 package com.orbital.backend.repository;
 
 import com.orbital.backend.model.Operator;

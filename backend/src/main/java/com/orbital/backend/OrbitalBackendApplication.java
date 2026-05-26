@@ -1,3 +1,11 @@
+/*
+ * Classe principal do backend.
+ * Inicia a aplicacao Spring.
+ */
+/*
+ * Quando o backend sobe, esta classe e o ponto de partida.
+ * Ela carrega as configuracoes e deixa tudo pronto para rodar.
+ */
 package com.orbital.backend;
 
 import org.springframework.boot.SpringApplication;

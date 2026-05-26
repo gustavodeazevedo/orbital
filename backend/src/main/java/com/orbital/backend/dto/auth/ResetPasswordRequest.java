@@ -1,3 +1,11 @@
+/*
+ * Dados para redefinir senha.
+ * Usado no AuthController e no AuthServiceImpl.
+ */
+/*
+ * Traz a nova senha e o codigo recebido por email.
+ * Usado para confirmar a troca com seguranca.
+ */
 package com.orbital.backend.dto.auth;
 
 import jakarta.validation.constraints.NotBlank;

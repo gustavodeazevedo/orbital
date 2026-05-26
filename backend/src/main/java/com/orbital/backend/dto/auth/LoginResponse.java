@@ -1,3 +1,11 @@
+/*
+ * Resposta de login com dados do operador e codigos de acesso.
+ * Usado no AuthServiceImpl e no frontend.
+ */
+/*
+ * Usado para iniciar a sessao e guardar informacoes basicas.
+ * A tela usa esses dados para seguir no fluxo.
+ */
 package com.orbital.backend.dto.auth;
 
 public class LoginResponse {

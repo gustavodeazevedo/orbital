@@ -1,3 +1,9 @@
+// Texto com palavras que trocam automaticamente.
+// Usado no Hero.
+/*
+ * Deixa a chamada principal mais dinamica.
+ * Aceita uma lista de palavras para alternar.
+ */
 import React, {
   forwardRef,
   useCallback,
@@ -92,27 +98,21 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
           .map((w, i, arr) => ({ ...w, needsSpace: i !== arr.length - 1 }));
       }
       if (splitBy === "words") {
-        return currentText
-          .split(" ")
-          .map((word, i, arr) => ({
-            characters: [word],
-            needsSpace: i !== arr.length - 1,
-          }));
-      }
-      if (splitBy === "lines") {
-        return currentText
-          .split("\n")
-          .map((line, i, arr) => ({
-            characters: [line],
-            needsSpace: i !== arr.length - 1,
-          }));
-      }
-      return currentText
-        .split(splitBy)
-        .map((part, i, arr) => ({
-          characters: [part],
+        return currentText.split(" ").map((word, i, arr) => ({
+          characters: [word],
           needsSpace: i !== arr.length - 1,
         }));
+      }
+      if (splitBy === "lines") {
+        return currentText.split("\n").map((line, i, arr) => ({
+          characters: [line],
+          needsSpace: i !== arr.length - 1,
+        }));
+      }
+      return currentText.split(splitBy).map((part, i, arr) => ({
+        characters: [part],
+        needsSpace: i !== arr.length - 1,
+      }));
     }, [texts, currentTextIndex, splitBy]);
 
     const getStaggerDelay = useCallback(

@@ -1,3 +1,9 @@
+// Secao de precos.
+// Usada no Home.
+/*
+ * Mostra os planos e o que cada um inclui.
+ * Ajuda o usuario a escolher.
+ */
 import {
   motion,
   type Variants,

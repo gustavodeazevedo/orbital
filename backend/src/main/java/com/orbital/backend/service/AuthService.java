@@ -1,3 +1,11 @@
+/*
+ * Define cadastro, login e reset de senha.
+ * Usado no AuthController e feito por AuthServiceImpl.
+ */
+/*
+ * Centraliza as regras de acesso do sistema.
+ * Mantem tudo em um lugar para ficar mais facil de manter.
+ */
 package com.orbital.backend.service;
 
 import com.orbital.backend.dto.auth.ForgotPasswordRequest;

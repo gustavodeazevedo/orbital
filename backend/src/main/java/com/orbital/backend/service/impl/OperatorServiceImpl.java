@@ -1,3 +1,11 @@
+/*
+ * Busca o perfil do operador no banco e monta a resposta.
+ * Chamado pelo OperatorController.
+ */
+/*
+ * Faz a consulta e prepara os dados do perfil.
+ * Usado quando a tela precisa dessas informacoes.
+ */
 package com.orbital.backend.service.impl;
 
 import com.orbital.backend.dto.auth.OperatorResponse;

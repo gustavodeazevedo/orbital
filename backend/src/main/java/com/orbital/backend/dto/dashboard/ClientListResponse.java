@@ -1,3 +1,11 @@
+/*
+ * Lista de clientes do dashboard.
+ * Sai da rota /clients.
+ */
+/*
+ * Formato dos dados quando a tela lista clientes.
+ * Deixa a resposta sempre igual para o frontend.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import java.time.LocalDateTime;

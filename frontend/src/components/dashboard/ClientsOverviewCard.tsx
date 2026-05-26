@@ -1,3 +1,9 @@
+// Card com resumo de clientes.
+// Usado no DashboardHome.
+/*
+ * Mostra novos e recorrentes em um relatorio rapido.
+ * Ajuda a acompanhar crescimento.
+ */
 import { ArrowUpRight } from "lucide-react";
 import {
   Area,

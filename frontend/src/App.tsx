@@ -1,3 +1,9 @@
+// Rotas principais do site e do dashboard.
+// Protege as paginas que exigem login.
+/*
+ * Define o mapa de navegacao do app.
+ * Decide qual layout aparece em cada rota.
+ */
 import { Routes, Route } from "react-router-dom";
 import LandingLayout from "./layouts/LandingLayout";
 import Home from "./pages/landing/Home";

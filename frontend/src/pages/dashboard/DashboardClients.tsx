@@ -1,3 +1,9 @@
+// Tela de clientes com lista, busca e formulario.
+// Usa dados do dashboard.
+/*
+ * Mostra os clientes e permite editar ou criar novos.
+ * Centraliza a experiencia da area de clientes.
+ */
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
 import {

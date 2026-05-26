@@ -1,3 +1,9 @@
+// Card com servicos mais usados.
+// Usado no DashboardHome.
+/*
+ * Mostra quais servicos aparecem mais.
+ * Ajuda a entender a demanda.
+ */
 import { ArrowUpRight } from "lucide-react";
 
 interface ServiceDistributionItem {

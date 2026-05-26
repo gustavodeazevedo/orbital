@@ -1,3 +1,7 @@
+/* Estilos globais e cores do site. */
+/* Aplicado em toda a interface. */
+/* Aqui ficam as definicoes de tema e ajustes gerais. */
+/* Use para mudar cores e detalhes gerais da UI. */
 @import "tailwindcss";
 
 @theme {

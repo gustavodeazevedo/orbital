@@ -1,3 +1,9 @@
+// Card de comparacao de agendamentos.
+// Usado no DashboardHome.
+/*
+ * Mostra o comparativo entre periodos.
+ * Ajuda a ver se houve melhora ou queda.
+ */
 import { ArrowUpRight, Clock3, Smile } from "lucide-react";
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
 

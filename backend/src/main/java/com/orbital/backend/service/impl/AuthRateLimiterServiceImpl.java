@@ -1,3 +1,11 @@
+/*
+ * Limita tentativas de login em um intervalo de tempo.
+ * Chamado pelo AuthServiceImpl.
+ */
+/*
+ * Decide se o usuario pode tentar de novo agora.
+ * Usa uma janela de tempo para contar tentativas.
+ */
 package com.orbital.backend.service.impl;
 
 import io.github.bucket4j.Bandwidth;

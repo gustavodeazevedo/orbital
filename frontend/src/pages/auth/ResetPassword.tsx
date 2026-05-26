@@ -1,3 +1,9 @@
+// Tela para criar uma nova senha.
+// Usa o authService e volta para o login.
+/*
+ * Recebe o codigo da URL e a nova senha.
+ * Ao salvar, volta para a tela de login.
+ */
 import { useMemo, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";

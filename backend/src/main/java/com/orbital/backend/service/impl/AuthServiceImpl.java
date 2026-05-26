@@ -1,3 +1,11 @@
+/*
+ * Regras de cadastro, login e reset de senha.
+ * Chamado pelo AuthController e conecta com codigos de acesso e email.
+ */
+/*
+ * Junta as regras principais do acesso.
+ * Se algo muda no login, o ajuste fica aqui.
+ */
 package com.orbital.backend.service.impl;
 
 import com.orbital.backend.dto.auth.ForgotPasswordRequest;

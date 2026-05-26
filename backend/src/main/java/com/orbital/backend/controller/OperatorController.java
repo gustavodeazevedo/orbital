@@ -1,3 +1,11 @@
+/*
+ * Rotas de perfil do operador (/operators/profile).
+ * Usa OperatorService para montar a resposta.
+ */
+/*
+ * Serve para carregar os dados do perfil usados no dashboard.
+ * Responde com informacoes basicas da conta.
+ */
 package com.orbital.backend.controller;
 
 import com.orbital.backend.dto.auth.OperatorResponse;

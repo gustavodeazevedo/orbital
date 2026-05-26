@@ -1,3 +1,9 @@
+// Video de boas-vindas do dashboard.
+// Mostrado no primeiro acesso.
+/*
+ * Apresenta o sistema para quem entra pela primeira vez.
+ * Pode ser fechado quando o usuario quiser.
+ */
 import { useEffect, useRef, useState } from "react";
 
 interface IntroVideoModalProps {

@@ -1,3 +1,9 @@
+// Topo do dashboard com perfil e sair.
+// Usado no DashboardLayout.
+/*
+ * Mostra o nome do operador e a opcao de sair.
+ * Mantem o topo igual em todas as paginas internas.
+ */
 import { LogOut } from "lucide-react";
 
 interface DashboardHeaderProps {

@@ -1,3 +1,11 @@
+/*
+ * Dados para atualizar um cliente.
+ * Usado no ClientController e no DashboardCommandServiceImpl.
+ */
+/*
+ * Define os campos editaveis do cliente.
+ * Usado quando a tela salva mudancas.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import jakarta.validation.constraints.Email;

@@ -1,3 +1,9 @@
+// Rodape da landing com links.
+// Usado no LandingLayout.
+/*
+ * Mostra links e informacoes institucionais.
+ * Fecha a pagina com um resumo do produto.
+ */
 import { motion } from "framer-motion";
 
 const footerLinks = {

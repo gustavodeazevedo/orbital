@@ -1,3 +1,11 @@
+/*
+ * Define as consultas do dashboard (listas e filtros).
+ * Usado nos controllers e feito por DashboardReadServiceImpl.
+ */
+/*
+ * Aqui ficam apenas leituras do banco.
+ * Evita misturar consulta com alteracao de dados.
+ */
 package com.orbital.backend.service;
 
 import com.orbital.backend.dto.dashboard.AppointmentListResponse;

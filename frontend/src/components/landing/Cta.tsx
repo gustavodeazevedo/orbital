@@ -1,3 +1,9 @@
+// Chamada final para cadastro.
+// Usada no Home.
+/*
+ * Reforca o convite para criar conta.
+ * Fecha a pagina com um objetivo claro.
+ */
 import { Link } from "react-router-dom";
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";

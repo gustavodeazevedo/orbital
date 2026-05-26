@@ -1,3 +1,11 @@
+/*
+ * Entidade que guarda o codigo de sessao.
+ * Criada no login e usada para manter ou encerrar a sessao.
+ */
+/*
+ * Representa uma sessao salva no banco.
+ * Usada para renovar ou finalizar o acesso.
+ */
 package com.orbital.backend.model;
 
 import jakarta.persistence.Column;

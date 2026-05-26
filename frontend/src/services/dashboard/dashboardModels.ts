@@ -1,3 +1,9 @@
+// Modelos e calculos do dashboard.
+// Usados nas telas e nos cards.
+/*
+ * Organiza os dados do dashboard em um formato facil de usar.
+ * Ajuda a manter os calculos em um lugar so.
+ */
 export class DashboardClient {
   public readonly id: number;
   public readonly nome: string;

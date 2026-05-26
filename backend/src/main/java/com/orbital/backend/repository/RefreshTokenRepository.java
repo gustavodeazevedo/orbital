@@ -1,3 +1,11 @@
+/*
+ * Acesso aos codigos de sessao no banco.
+ * Usado pelo AuthServiceImpl.
+ */
+/*
+ * Guarda e remove codigos de sessao.
+ * Ajuda a manter o login ativo com seguranca.
+ */
 package com.orbital.backend.repository;
 
 import com.orbital.backend.model.Operator;

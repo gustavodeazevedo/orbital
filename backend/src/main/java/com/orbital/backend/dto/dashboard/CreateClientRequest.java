@@ -1,3 +1,11 @@
+/*
+ * Dados para criar um cliente.
+ * Usado no ClientController e no DashboardCommandServiceImpl.
+ */
+/*
+ * Campos enviados no cadastro do cliente.
+ * Ajuda a manter o padrao na criacao.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import jakarta.validation.constraints.Email;

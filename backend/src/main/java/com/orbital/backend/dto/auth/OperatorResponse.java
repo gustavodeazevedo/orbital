@@ -1,3 +1,11 @@
+/*
+ * Dados do perfil do operador.
+ * Usado no AuthServiceImpl e no OperatorServiceImpl.
+ */
+/*
+ * Resposta usada para mostrar informacoes da conta.
+ * Usada no login e no carregamento do perfil.
+ */
 package com.orbital.backend.dto.auth;
 
 public class OperatorResponse {

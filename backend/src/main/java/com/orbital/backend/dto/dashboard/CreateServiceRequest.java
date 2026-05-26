@@ -1,3 +1,11 @@
+/*
+ * Dados para criar um servico.
+ * Usado no ServiceCatalogController e no DashboardCommandServiceImpl.
+ */
+/*
+ * Campos enviados ao criar um novo servico.
+ * Evita erros de dados faltando.
+ */
 package com.orbital.backend.dto.dashboard;
 
 import jakarta.validation.constraints.DecimalMin;

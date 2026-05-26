@@ -1,3 +1,11 @@
+/*
+ * Gera e valida os codigos de acesso do login.
+ * Usado pelo AuthServiceImpl e pelo filtro de autenticacao.
+ */
+/*
+ * Cuida da criacao e checagem dos codigos de acesso.
+ * Garantia de que o token ainda vale.
+ */
 package com.orbital.backend.config;
 
 import io.jsonwebtoken.Claims;

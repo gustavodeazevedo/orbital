@@ -1,3 +1,9 @@
+// Secao de funcionalidades com cards.
+// Usada no Home.
+/*
+ * Destaca os pontos fortes do produto.
+ * Usa cards para facilitar a leitura.
+ */
 import { motion, type Variants } from "framer-motion";
 import {
   Calendar,

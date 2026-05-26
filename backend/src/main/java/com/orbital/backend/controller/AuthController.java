@@ -1,3 +1,11 @@
+/*
+ * Rotas de autenticacao (/auth).
+ * Fala com AuthService e devolve resposta para o frontend.
+ */
+/*
+ * Aqui chegam os pedidos de login, cadastro e senha.
+ * Ele repassa o trabalho para o service e devolve a resposta.
+ */
 package com.orbital.backend.controller;
 
 import com.orbital.backend.dto.auth.ForgotPasswordRequest;

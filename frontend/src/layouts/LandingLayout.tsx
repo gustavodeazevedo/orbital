@@ -1,3 +1,9 @@
+// Estrutura da landing com cabecalho e rodape.
+// Usado nas paginas publicas.
+/*
+ * Mantem o mesmo topo e rodape em toda a landing.
+ * Facilita adicionar novas secoes sem duplicar layout.
+ */
 import { Outlet } from "react-router-dom";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";

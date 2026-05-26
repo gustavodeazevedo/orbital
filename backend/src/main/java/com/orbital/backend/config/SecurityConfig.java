@@ -1,3 +1,11 @@
+/*
+ * Define as regras de seguranca e quais rotas sao publicas.
+ * Ativa o filtro de autenticacao e a criptografia de senha.
+ */
+/*
+ * Aqui ficam as escolhas de seguranca do sistema.
+ * Ajuda a separar o que e publico do que exige login.
+ */
 package com.orbital.backend.config;
 
 import org.springframework.context.annotation.Bean;

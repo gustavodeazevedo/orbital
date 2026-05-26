@@ -1,3 +1,9 @@
+// Primeira secao da landing com chamada principal.
+// Usado no Home.
+/*
+ * Mostra a proposta de valor de forma direta.
+ * Traz o botao principal de cadastro.
+ */
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";

@@ -1,3 +1,11 @@
+/*
+ * Rotas de agendamentos (/appointments).
+ * Usa servicos de leitura e escrita do dashboard.
+ */
+/*
+ * Recebe as acoes da tela de agendamentos.
+ * Lista, cria e atualiza agendamentos no banco.
+ */
 package com.orbital.backend.controller;
 
 import com.orbital.backend.dto.common.ApiResponse;
