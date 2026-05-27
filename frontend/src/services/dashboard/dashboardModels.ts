@@ -126,6 +126,9 @@ export class DashboardAppointment {
   }
 
   public dateKey(): string {
-    return this.scheduledAt.toISOString().slice(0, 10);
+    const year = this.scheduledAt.getFullYear();
+    const month = `${this.scheduledAt.getMonth() + 1}`.padStart(2, "0");
+    const day = `${this.scheduledAt.getDate()}`.padStart(2, "0");
+    return `${year}-${month}-${day}`;
   }
 }
