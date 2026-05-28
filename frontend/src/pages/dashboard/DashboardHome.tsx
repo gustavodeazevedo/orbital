@@ -369,7 +369,6 @@ const DashboardHome = () => {
           <AppointmentsComparisonCard
             weeklyData={comparisonData}
             totalAppointments={appointments.length}
-            completionRate={completionRate}
             isLoading={isLoading}
           />
         </div>

@@ -16,14 +16,12 @@ export interface WeeklyComparisonPoint {
 interface AppointmentsComparisonCardProps {
   readonly weeklyData: ReadonlyArray<WeeklyComparisonPoint>;
   readonly totalAppointments: number;
-  readonly completionRate: number;
   readonly isLoading?: boolean;
 }
 
 const AppointmentsComparisonCard = ({
   weeklyData,
   totalAppointments,
-  completionRate,
   isLoading = false,
 }: AppointmentsComparisonCardProps) => {
   return (
