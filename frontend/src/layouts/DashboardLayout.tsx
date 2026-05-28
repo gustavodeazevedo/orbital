@@ -121,16 +121,16 @@ const DashboardLayout = () => {
   );
 
   return (
-    <div className="h-screen w-screen bg-background-secondary overflow-hidden">
+    <div className="h-screen w-screen bg-background-secondary overflow-hidden flex flex-col">
       <IntroVideoModal open={showIntro} onClose={() => setShowIntro(false)} />
 
-      <div className="h-full w-full bg-surface overflow-hidden lg:flex">
+      <div className="flex-1 w-full bg-surface overflow-hidden flex flex-col lg:flex-row">
         <DashboardSidebar
           activeSection={activeSection}
           onSelectSection={(section) => navigationService.goToSection(section)}
         />
 
-        <main className="liquid-main-shell flex-1 p-4 md:p-6 lg:p-8 overflow-auto">
+        <main className="liquid-main-shell flex-1 p-4 md:p-6 lg:p-8 overflow-y-auto pb-24 lg:pb-8">
           <DashboardHeader
             activeSectionLabel={sectionLabel[activeSection]}
             operatorName={operator?.nome}
@@ -138,9 +138,6 @@ const DashboardLayout = () => {
           />
 
           <Outlet />
-
-          {/* Reserve space for bottom dock on mobile */}
-          <div className="lg:hidden h-24" />
         </main>
       </div>
 
