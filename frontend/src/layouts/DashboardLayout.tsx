@@ -130,7 +130,7 @@ const DashboardLayout = () => {
           onSelectSection={(section) => navigationService.goToSection(section)}
         />
 
-        <main className="liquid-main-shell flex-1 p-4 md:p-6 lg:p-8 overflow-auto pb-32 lg:pb-8">
+        <main className="liquid-main-shell flex-1 p-4 md:p-6 lg:p-8 overflow-auto">
           <DashboardHeader
             activeSectionLabel={sectionLabel[activeSection]}
             operatorName={operator?.nome}
@@ -138,11 +138,18 @@ const DashboardLayout = () => {
           />
 
           <Outlet />
+
+          {/* Reserve space for bottom dock on mobile */}
+          <div className="lg:hidden h-24" />
         </main>
       </div>
 
       <div className="lg:hidden">
-        <BottomDock items={bottomDockItems} activeKey={activeSection} />
+        <BottomDock
+          items={bottomDockItems}
+          activeKey={activeSection}
+          reserveSpace={false}
+        />
       </div>
     </div>
   );
