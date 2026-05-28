@@ -11,7 +11,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Funcionalidades", href: "#features" },
-  { label: "Mobile", href: "#mobile" },
+  { label: "Preços", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];
 
