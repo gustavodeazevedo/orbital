@@ -6,11 +6,13 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { CalendarDays, LayoutGrid, Settings, Users } from "lucide-react";
 import { authService } from "../services/auth/authService";
 import { OperatorModel } from "../services/auth/authModels";
 import DashboardSidebar from "../components/dashboard/DashboardSidebar";
 import DashboardHeader from "../components/dashboard/DashboardHeader";
 import IntroVideoModal from "../components/dashboard/IntroVideoModal";
+import BottomDock from "../components/layout/BottomDock";
 
 type DashboardSection = "inicio" | "agendamentos" | "clientes" | "servicos";
 
@@ -93,6 +95,31 @@ const DashboardLayout = () => {
     navigate("/login");
   };
 
+  const bottomDockItems = useMemo(
+    () => [
+      { key: "inicio", label: "Início", icon: LayoutGrid, to: "/dashboard" },
+      {
+        key: "agendamentos",
+        label: "Agendamentos",
+        icon: CalendarDays,
+        to: "/dashboard/agendamentos",
+      },
+      {
+        key: "clientes",
+        label: "Clientes",
+        icon: Users,
+        to: "/dashboard/clientes",
+      },
+      {
+        key: "servicos",
+        label: "Serviços",
+        icon: Settings,
+        to: "/dashboard/servicos",
+      },
+    ],
+    [],
+  );
+
   return (
     <div className="h-screen w-screen bg-background-secondary overflow-hidden">
       <IntroVideoModal open={showIntro} onClose={() => setShowIntro(false)} />
@@ -103,7 +130,7 @@ const DashboardLayout = () => {
           onSelectSection={(section) => navigationService.goToSection(section)}
         />
 
-        <main className="liquid-main-shell flex-1 p-4 md:p-6 lg:p-8 overflow-auto">
+        <main className="liquid-main-shell flex-1 p-4 md:p-6 lg:p-8 overflow-auto pb-32 lg:pb-8">
           <DashboardHeader
             activeSectionLabel={sectionLabel[activeSection]}
             operatorName={operator?.nome}
@@ -112,6 +139,10 @@ const DashboardLayout = () => {
 
           <Outlet />
         </main>
+      </div>
+
+      <div className="lg:hidden">
+        <BottomDock items={bottomDockItems} activeKey={activeSection} />
       </div>
     </div>
   );
