@@ -1,0 +1,21 @@
+{
+  "name": "Orbital",
+  "short_name": "Orbital",
+  "description": "Agendamento inteligente para seu negócio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#D4FF5B",
+  "icons": [
+    {
+      "src": "/orbital-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/orbital-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
