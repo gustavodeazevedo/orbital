@@ -65,11 +65,6 @@ const AppointmentsComparisonCard = ({
       </div>
 
       <div className="relative mt-auto">
-        <div className="absolute z-10" style={{ right: "22%", top: "25%" }}>
-          <span className="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-primary text-text">
-            {completionRate}%
-          </span>
-        </div>
         <div className="h-36">
           {isLoading ? (
             <div className="h-full rounded-xl bg-background-secondary animate-pulse" />
